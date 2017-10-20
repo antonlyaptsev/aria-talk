@@ -1,129 +1,249 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>ARIA-атрибуты</title>
-	<meta charset="utf-8">
-	<meta http-equiv="x-ua-compatible" content="ie=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="node_modules/shower-ribbon/styles/screen-16x10.css">
+  <title>ARIA-атрибуты</title>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="node_modules/shower-ribbon/styles/screen-16x10.css">
 </head>
 <body class="shower list">
 
-	<header class="caption">
-		<h1>ARIA-атрибуты. Что это и когда использовать</h1>
-		<p>Антон Ляпцев</p>
-	</header>
+  <style>
+    .slide .link-center {
+      text-align: center;
+      font-size: 2em;
+    }
+  </style>
 
-	<section class="slide" id="cover">
-		<figure>
-			<img src="pictures/aria-html5.png" alt="html5 logo with aria">
-		</figure>
-		<h2>Что это и когда использовать</h2>
-		<style>
-			#cover h2 {
-				margin:30px 0 0;
-				color:rgba(0, 0, 0, .9);
-				text-align:center;
-				font-size:70px;
-				}
-			#cover img {
-				display: block;
-				margin: 0 auto;
-			}
-		</style>
-	</section>
+  <header class="caption">
+    <h1>ARIA-атрибуты. Что это и когда использовать</h1>
+    <p>Антон Ляпцев</p>
+  </header>
 
-	<section class="slide">
-		<h2>Сферический bootstrap</h2>
-		<pre>
-			<code>&lt;button type="button" class="close"</code>
-			<code>        data-dismiss="alert" <mark>aria-label="Close"</mark>&gt;</code>
-			<code>    &lt;span <mark>aria-hidden="true"</mark>&gt;&times;&lt;/span&gt;</code>
-			<code>&lt;/button&gt;</code>
-		</pre>
-	</section>
+  <section class="slide" id="cover">
+    <figure>
+      <img src="pictures/aria-html5.png" alt="html5 logo with aria">
+    </figure>
+    <h2>Что это и когда использовать</h2>
+    <style>
+      #cover h2 {
+        margin:30px 0 0;
+        color:rgba(0, 0, 0, .9);
+        text-align:center;
+        font-size:70px;
+        }
+      #cover img {
+        display: block;
+        margin: 0 auto;
+      }
+    </style>
+  </section>
 
-	<section class="slide">
-		<h2>WAI-ARIA</h2>
-		<p>Web Accessibility Initiative - Accessible Rich Internet Applications</p>
-	</section>
+  <section class="slide">
+    <h2>Сферический bootstrap</h2>
+    <pre>
+      <code>&lt;button type="button" class="close"</code>
+      <code>        data-dismiss="alert" <mark>aria-label="Close"</mark>&gt;</code>
+      <code>    &lt;span <mark>aria-hidden="true"</mark>&gt;&times;&lt;/span&gt;</code>
+      <code>&lt;/button&gt;</code>
+    </pre>
+  </section>
 
-	<section class="slide" id="disgust">
-		<h2>Доступность??</h2>
-		<figure>
-			<img class="cover" src="pictures/again.jpg" alt="person expressing disgust">
-		</figure>
-		<style>
-			#disgust img {
-				width: 100%;
-			}
-			#disgust h2 {
-				color: #fff;
-				font-size: 3em;
-			}
-		</style>
-	</section>
+  <section class="slide">
+    <h2>WAI-ARIA</h2>
+    <p>Web Accessibility Initiative - Accessible Rich Internet Applications</p>
+  </section>
 
-	<section class="slide" id="notonly">
-		<p><strong>Доступность</strong> - не только о <em>скринридерах</em></p>
-		<p>Но в данном случае речь именно о них</p>
-		<style>
-			#notonly p {
-				text-align: center;
-			}
-			#notonly p:first-child {
-				margin-top: 100px;
-			}
-		</style>
-	</section>
+  <section class="slide" id="disgust">
+    <h2>Доступность??</h2>
+    <figure>
+      <img class="cover" src="pictures/again.jpg" alt="person expressing disgust">
+    </figure>
+    <style>
+      #disgust img {
+        width: 100%;
+      }
+      #disgust h2 {
+        color: #fff;
+        font-size: 3em;
+      }
+    </style>
+  </section>
 
-	<section class="slide" id="domtree">
-		<h2>DOM Tree</h2>
-		<figure>
-			<img src="pictures/domtree.png" alt="html dom tree schema">
-		</figure>
-		<style>
-			#domtree img {
-				width: 100%;
-			}
-		</style>
-	</section>
+  <section class="slide" id="notonly">
+    <p><strong>Доступность</strong> - не только о <em>скринридерах</em></p>
+    <p>Но в данном случае речь именно о них</p>
+    <style>
+      #notonly p {
+        text-align: center;
+      }
+      #notonly p:first-child {
+        margin-top: 100px;
+      }
+    </style>
+  </section>
 
-	<section class="slide" id="acctree">
-		<h2>Accessibility Tree</h2>
-		<figure>
-			<img src="pictures/accessibilitytree.jpg" alt="accessibility tree schema">
-		</figure>
-		<style>
-			#acctree img {
-				width: 100%;
-			}
-		</style>
-	</section>
+  <section class="slide" id="domtree">
+    <h2>DOM Tree</h2>
+    <figure>
+      <img src="pictures/domtree.png" alt="html dom tree schema">
+    </figure>
+    <style>
+      #domtree img {
+        width: 100%;
+      }
+    </style>
+  </section>
 
-	<section class="slide">
-		<h2>Accessibility Tree</h2>
-		<ol>
-			<li>Дерево доступности строится для интерактивных элементов</li>
-			<li class="next">Семантика имеет значение: атрибуты <em>role</em>, <em>name</em>, <em>value</em>, <em>alt</em></li>
-			<li class="next">Семантика реально имеет значение: headings, &lt;header&gt;,&lt;main&gt;, &lt;label&gt;</li>
-			<li class="next">Я серьезно: &lt;form&gt;</li>
-			<li class="next">Семантика решает: &lt;a&gt;</li>
-		</ol>
-	</section>
+  <section class="slide" id="acctree">
+    <h2>Accessibility Tree</h2>
+    <figure>
+      <img src="pictures/accessibilitytree.jpg" alt="accessibility tree schema">
+    </figure>
+    <style>
+      #acctree img {
+        width: 100%;
+      }
+    </style>
+  </section>
 
-	<section class="slide">
-		<h2 class="shout">А зачем тогда ARIA-атрибуты?</h2>
-	</section>
+  <section class="slide">
+    <h2>Accessibility Tree</h2>
+    <ol>
+      <li>Дерево доступности строится для интерактивных элементов</li>
+      <li class="next">Семантика имеет значение: атрибуты <em>role</em>, <em>name</em>, <em>value</em>, <em>alt</em></li>
+      <li class="next">Семантика реально имеет значение: headings, &lt;header&gt;,&lt;main&gt;, &lt;label&gt;</li>
+      <li class="next">Я серьезно: &lt;form&gt;</li>
+      <li class="next">Семантика решает: &lt;a&gt;</li>
+    </ol>
+  </section>
 
-	<footer class="badge">
-		<a href="https://github.com/shower/shower">Fork me on GitHub</a>
-	</footer>
+  <section class="slide">
+    <h2 class="shout">А зачем тогда ARIA-атрибуты?</h2>
+  </section>
 
-	<div class="progress"></div>
+  <section class="slide">
+    <h2>Сложные компоненты</h2>
+    <ol>
+      <li>Календари</li>
+      <li class="next">Date / Time / DateTime pickers</li>
+      <li class="next">Комбобоксы</li>
+      <li class="next">Очень кастомные нативные элементы</li>
+    </ol>
+  </section>
 
-	<script src="node_modules/shower-core/shower.min.js"></script>
-	<!-- Copyright © 2017 Yours Truly, Famous Inc. -->
+  <section class="slide" id="when">
+    <p>ARIA-атрибуты отвечают за семантику в тех местах, где нативные средства HTML5 бессильны</p>
+    <p>В остальных случаях они вам не нужны</p>
+    <style>
+      #when p {
+        text-align: center;
+      }
+      #when p:first-child {
+        margin-top: 100px;
+      }
+    </style>
+  </section>
+
+  <section class="slide">
+    <h2>Кнопка с иконкой</h2>
+    <pre>
+      <code>&lt;button type="button" class="filter"</code>
+      <code>        data-dismiss="alert" aria-label="Toggle filter"&gt;</code>
+      <code>    &lt;span aria-hidden="true"&gt;&lt;/span&gt;</code>
+      <code>&lt;/button&gt;</code>
+    </pre>
+    <p>span не попадет в дерево доступности</p>
+  </section>
+
+  <section class="slide" id="btn-voice">
+    <figure>
+      <blockquote>
+        <p>Button. Toggle filter</p>
+      </blockquote>
+    </figure>
+    <style>
+      #btn-voice figure {
+        font-size: larger;
+        margin-top: 23%;
+        margin-left: 38%;
+      }
+    </style>
+  </section>
+
+  <section class="slide">
+    <h2>Дерево</h2>
+    <pre>
+      <code>&lt;ul role="tree" aria-expanded="false"</code>
+      <code>        aria-label="Expand tree node"&gt;</code>
+      <code>    &lt;li role="treeitem" aria-label="Tree node"&gt;&lt;/li&gt;</code>
+      <code>    &lt;li role="treeitem" aria-label="Tree node"&gt;&lt;/li&gt;</code>
+      <code>&lt;/button&gt;</code>
+    </pre>
+  </section>
+
+  <section class="slide">
+    <h2>Бооольше атрибутов</h2>
+    <ol>
+      <li>aria-labelledby - ссылка на описание в другой ноде</li>
+      <li class="next">aria-live, aria-atomic, aria-relevant - настройка оповещения об изменениях в ноде. Например, добавление элемента в список</li>
+      <li class="next">aria-disabled - блокировка элемента</li>
+      <li class="next">aria-invalid - валидация элемента</li>
+      <li class="next">... и множество других, характерных для той или иной роли</li>
+    </ol>
+  </section>
+
+  <section class="slide">
+    <h2>СПЕКА-TIME</h2>
+    <p class="link-center"><a href="https://www.w3.org/TR/wai-aria-1.1/">Accessible Rich Internet Applications (WAI-ARIA) 1.1</a></p>
+    <p>Ещё кандидат в рекомендации, но самое вкусное там</p>
+  </section>
+
+  <section class="slide">
+    <h2>СПЕКА-TIME</h2>
+    <p class="link-center"><a href="https://www.w3.org/TR/wai-aria-practices-1.1/">WAI-ARIA Authoring Practices 1.1</a></p>
+    <p>Гайд к основной спецификации, содержащий рекомендации и советы по взаимодействию с клавиатурой и использованию атрибутов для ролей</p>
+  </section>
+
+  <section class="slide">
+    <h2>СПЕКА-TIME</h2>
+    <p class="link-center"><a href="https://www.w3.org/TR/html-aria/">ARIA in HTML</a></p>
+    <p>Сводные таблицы по html-элементам, ролям и доступным для них ARIA-атрибутов</p>
+  </section>
+
+  <section class="slide">
+    <h2>ChromeVox</h2>
+    <p class="link-center"><a href="http://www.chromevox.com/">chromevox.com</a></p>
+    <p>Бесплатный браузерный скринридер, доступный с chrome store</p>
+  </section>
+
+  <section class="slide" id="links">
+    <h2>Ccылки</h2>
+    <p class="link-center"><a href="http://tinyurl.com/itcluster-aria">tinyurl.com/itcluster-aria</a></p>
+    <style>
+      #links p {
+        margin-top: 10%;
+        font-size: 3em;
+      }
+    </style>
+  </section>
+
+  <section class="slide">
+    <h2 class="shout">Давайте делать для всех</h2>
+  </section>
+
+  <section class="slide">
+    <h2 class="shout">Спасибо!</h2>
+  </section>
+
+  <footer class="badge">
+    <a href="https://github.com/shower/shower">Fork me on GitHub</a>
+  </footer>
+
+  <div class="progress"></div>
+
+  <script src="node_modules/shower-core/shower.min.js"></script>
 
 </body>
 </html>
